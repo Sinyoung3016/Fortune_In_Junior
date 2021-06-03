@@ -6,6 +6,8 @@ import hashlib
 try:
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind(("", 8000))
+    #error2
+    #s.settimeout(15)
 
 except socket.error:
     print("failed to create socket")
